@@ -132,7 +132,7 @@ class TestETL:
     def test_silver_no_duplicates(self, silver_path):
         from deltalake import DeltaTable
         df = pl.from_arrow(DeltaTable(silver_path).to_pyarrow_table())
-        assert df.is_unique().all()
+        assert not df.is_duplicated().any()
 
     def test_gold_has_feature_columns(self, gold_path):
         from deltalake import DeltaTable
