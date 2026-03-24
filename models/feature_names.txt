@@ -1,0 +1,13 @@
+wind_speed
+temp_c
+duration_min
+wind_favorable
+is_ambush
+is_still_hunt
+is_stalking
+is_calling
+is_whitetail
+is_turkey
+is_elk
+moon_numeric
+wind_dir_numeric
